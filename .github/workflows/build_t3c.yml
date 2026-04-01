@@ -18,6 +18,7 @@
 name: Build and Release Cache Config
 
 on:
+  push:
   workflow_dispatch:
 
 jobs:
