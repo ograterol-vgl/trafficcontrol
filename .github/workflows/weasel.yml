@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v4
     - name: Run weasel
       run: |
         # Image is licenseweasel/weasel:v0.4

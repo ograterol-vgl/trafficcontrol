@@ -37,9 +37,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Checkout sphinx-action
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ammaraskar/sphinx-action
           ref: 35082eb35b69713fe335801c4d5846a4cc3c91ff # Mon Apr 20 15:25:33 2020 -0700 Fix travis for docker image change
@@ -49,7 +49,7 @@ jobs:
         with:
           docs-folder: "docs/"
           pre-build-command: "apt-get install -y pandoc"
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         with:
           name: HTMLDocumentation
           path: docs/build/html/
