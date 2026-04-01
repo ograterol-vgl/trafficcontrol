@@ -33,6 +33,11 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Setup Docker Compose V2
+      run: |
+        printf '#!/bin/sh\nexec docker compose "$@"\n' | sudo tee /usr/local/bin/docker-compose > /dev/null
+        sudo chmod +x /usr/local/bin/docker-compose
+
     - name: Build Cache Config RPM
       run: |
         ./pkg -8 -v -L -S cache-config_build
