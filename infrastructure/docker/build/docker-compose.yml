@@ -30,8 +30,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -42,8 +42,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -54,8 +54,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -66,8 +66,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -78,8 +78,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -90,8 +90,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
       - ../../../.npm:/root/.npm:z
@@ -103,8 +103,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
       - ../../../.m2:/root/.m2:z
@@ -116,8 +116,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -128,8 +128,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -140,8 +140,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
 
@@ -152,7 +152,7 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z

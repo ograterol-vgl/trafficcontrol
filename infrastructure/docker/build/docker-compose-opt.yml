@@ -23,8 +23,8 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../../traffic_server/_tsb:/opt/tsb-ats:z
   fakeorigin_build:
@@ -34,7 +34,7 @@ services:
       context: ../../..
       args:
         # Change BASE_IMAGE to centos when RHEL_VERSION=7
-        BASE_IMAGE: ${BASE_IMAGE:-rockylinux}
-        RHEL_VERSION: ${RHEL_VERSION:-8}
+        BASE_IMAGE: ${BASE_IMAGE-rockylinux}
+        RHEL_VERSION: ${RHEL_VERSION-8}
     volumes:
       - ../../..:/trafficcontrol:z
